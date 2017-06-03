@@ -41,9 +41,24 @@ exports.arraysAnswers = {
     return arr;
   };
 
-  removeWithoutCopy: function(arr, item) {
+  // ==============================================
 
-  },
+  // Remove an item from an array and return the original array
+
+  //removeWithoutCopy: function (arr, item)
+  function removeWithoutCopy (arr, item) {
+    // declare a constructor - say newArr
+
+    var newArr = new Array();
+     for (var i = 0; i < arr.length; i++) {
+      if (arr[i] != item) {
+        newArr.push(arr[i]);
+      }
+     }
+     return newArr;
+  };
+
+  // ===========================================================
 
   append: function(arr, item) {
 
