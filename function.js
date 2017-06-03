@@ -29,8 +29,6 @@ exports.functionsAnswers = {
       array[j] = helper [j];
       }
       return array; 
-
-
   },
 
   partial: function(fn, str1, str2) {
