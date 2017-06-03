@@ -13,12 +13,33 @@ exports.arraysAnswers = {
   },
 
   sum: function(arr) {
+    // Declare a variable that will add all the items in an array
+    var sum = 0;
+
+    for (var 1 = 0, i < arr.length, i ++) {
+      sum += arr[i];
+    }
+
+    return sum;
 
   },
+
+  //================================================
+
+  // Removing an item from an array
 
   remove: function(arr, item) {
 
-  },
+    var itemToRemove
+
+    // loop over the array and use the splice method to select the item to remove
+    (for var i = 0; i < arr.length, i++) {
+      if (arr[i] === item) {
+        itemToRemove = arr.splice(i, 1);
+      }
+    }
+    return arr;
+  };
 
   removeWithoutCopy: function(arr, item) {
 
