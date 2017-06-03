@@ -69,13 +69,19 @@ exports.arraysAnswers = {
     return arr;
   };
 
+  // Truncate an array using the splice method
 
   truncate: function(arr) {
 
+     arr.splice(arr.length-1, 1);
+      return arr;
   },
 
   prepend: function(arr, item) {
+    // Use the unshift method to add an item to the begining of the array
 
+    arr.unshift(item);
+    return arr;
   },
 
   curtail: function(arr) {

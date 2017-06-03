@@ -16,6 +16,20 @@ exports.functionsAnswers = {
   },
 
   makeClosures: function(arr, fn) {
+    // Declare an empty array and a helper function
+    var array = [];
+    var hlper = function (j) {
+      return function () {
+        return fn(arr[j]);
+      }
+    };
+    // loop across the arr
+
+    for (var j = 0; j < arr.length; j++) {
+      array[j] = helper [j];
+      }
+      return array; 
+
 
   },
 
