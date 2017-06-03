@@ -60,9 +60,15 @@ exports.arraysAnswers = {
 
   // ===========================================================
 
+  // Append an item to the end of an array
+
   append: function(arr, item) {
 
-  },
+    // Use the push method to push an item to the end of the array
+    arr.push(item);
+    return arr;
+  };
+
 
   truncate: function(arr) {
 
